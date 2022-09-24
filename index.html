@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Inter:wght@900 & display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Bruno Idalgo no NLW</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="https://github.com/brunoidalgo.png" alt="Foto de Bruno com a namorada">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h2>Esportes que mais pratico</h2>
+                <p>Esses são meus esportes preferidos!</p>
+
+                <ul class="sports-list">
+
+
+                    <li>
+                        <a target="_blank" href="https://www.todamateria.com.br/tenis-de-mesa/">
+                            <img src="data:image/jpeg;base64,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"
+                                alt="Imagem do esporte Tenis de mesa"></a>
+
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.todamateria.com.br/basquetebol/">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOQHSpX6M1-Cf3BLcEn-fM2Zl5_LvE5iztOw&usqp=CAU"
+                                alt="Imagem do esporte basquete"></a>
+
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.infoescola.com/esportes/tenis/">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaq02yt6AKOOc8DIPbmuK-99qt7koS_s-IYg&usqp=CAU "
+                                alt="Imagem do esporte tênis"></a>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>Canais e conteudos que mais gosto</h2>
+                <p>Lista de canais que eu gosto!</p>
+
+                <ul class="channel-list">
+
+
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/c/RocketSeat">
+                            <img src="https://yt3.ggpht.com/ytc/AMLnZu9-n9mDtKOwVMx3_-2zr8H57lHFag5t-0JcJNFPUQ=s88-c-k-c0x00ffffff-no-rj"
+                                alt="Imagem de RocketSeat"></a>
+
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/c/pasquadev">
+                            <img src="https://yt3.ggpht.com/ytc/AMLnZu8Qoiyg-4i4Y3Odj29O75-8o7QZCyCbYnC02nnT=s88-c-k-c0x00ffffff-no-rj"
+                                alt="Imagem de Pasquadev"></a>
+
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/c/HashtagPrograma%C3%A7%C3%A3o">
+                            <img src="https://yt3.ggpht.com/ytc/AMLnZu-50eV3fK6unoZyi0yLMWnAo-NIRRy1PMTPUen8=s88-c-k-c0x00ffffff-no-rj"
+                                alt="Imagem de Hashtag programação"></a>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>Redes sociais que gosto</h2>
+                <p>Se conecte comigo agora mesmo!</p>
+
+                <ul class="Social List">
+
+
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/brunooidalgo/">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21Z"
+                                    stroke="#FA41FE" stroke-width="2" stroke-miterlimit="10" />
+                                <path
+                                    d="M21.5 4.5H10.5C7.18629 4.5 4.5 7.18629 4.5 10.5V21.5C4.5 24.8137 7.18629 27.5 10.5 27.5H21.5C24.8137 27.5 27.5 24.8137 27.5 21.5V10.5C27.5 7.18629 24.8137 4.5 21.5 4.5Z"
+                                    stroke="#FA41FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M22.5 11C23.3284 11 24 10.3284 24 9.5C24 8.67157 23.3284 8 22.5 8C21.6716 8 21 8.67157 21 9.5C21 10.3284 21.6716 11 22.5 11Z"
+                                    fill="#FA41FE" />
+                            </svg>
+
+
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://twitter.com/">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 11C16 8.25003 18.3125 5.96253 21.0625 6.00003C22.0256 6.01115 22.9649 6.30018 23.7676 6.83237C24.5704 7.36457 25.2023 8.11728 25.5875 9.00003H30L25.9625 13.0375C25.7019 17.0932 23.9066 20.8975 20.9415 23.6769C17.9764 26.4562 14.0641 28.002 10 28C6 28 5 26.5 5 26.5C5 26.5 9 25 11 22C11 22 3 18 5 7.00003C5 7.00003 10 12 16 13V11Z"
+                                    stroke="#2871FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+
+
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 16L14 12V20L20 16Z" stroke="#F40000" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M3 16C3 19.725 3.3875 21.9 3.675 23.025C3.75427 23.3302 3.90418 23.6126 4.11262 23.8493C4.32106 24.0859 4.58221 24.2703 4.875 24.3875C9.0625 25.9875 16 25.95 16 25.95C16 25.95 22.9375 25.9875 27.125 24.3875C27.4178 24.2703 27.6789 24.0859 27.8874 23.8493C28.0958 23.6126 28.2457 23.3302 28.325 23.025C28.6125 21.9 29 19.725 29 16C29 12.275 28.6125 10.1 28.325 8.975C28.2457 8.66975 28.0958 8.38741 27.8874 8.15074C27.6789 7.91407 27.4178 7.7297 27.125 7.6125C22.9375 6.0125 16 6.05 16 6.05C16 6.05 9.0625 6.0125 4.875 7.6125C4.58221 7.7297 4.32106 7.91407 4.11262 8.15074C3.90418 8.38741 3.75427 8.66975 3.675 8.975C3.3875 10.1 3 12.275 3 16Z"
+                                    stroke="#F40000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </a>
+
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.twitch.tv/">
+                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.2824 25H15.8426C15.6011 25.0001 15.3678 25.0844 15.1852 25.2375L9.28125 30V25H6.1875C5.914 25 5.65169 24.8946 5.4583 24.7071C5.2649 24.5196 5.15625 24.2652 5.15625 24V6C5.15625 5.73478 5.2649 5.48043 5.4583 5.29289C5.65169 5.10536 5.914 5 6.1875 5H26.8125C27.086 5 27.3483 5.10536 27.5417 5.29289C27.7351 5.48043 27.8438 5.73478 27.8438 6V19.5375C27.8417 19.6832 27.8072 19.8267 27.7427 19.9583C27.6782 20.0899 27.5851 20.2065 27.4699 20.3L21.9398 24.7625C21.7572 24.9156 21.5239 24.9999 21.2824 25V25Z"
+                                    stroke="#9A35FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21.6562 11V17" stroke="#9A35FF" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M15.4688 11V17" stroke="#9A35FF" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
